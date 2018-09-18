@@ -1,5 +1,9 @@
 # Ciao landing page
 
+## URL
+https://keen-morse-41a392.netlify.com/
+
+## Set Up
 ```
 $ yarn install
 
