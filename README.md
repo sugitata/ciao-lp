@@ -10,10 +10,11 @@ $ yarn start
 $ yarn start_girls
 
 # build for production
-$ yarn prod:start
-$ yarn prod:start:girls
+$ yarn prod
+$ yarn prod:girls
 ```
 
 [percelのバグ](https://github.com/parcel-bundler/parcel/issues/856)？っぽいのでプロダクション用のディレクトリは分けている(/prod)
 
+### yarn prod / yarn prod:girls後に行うこと
 1. htmlファイルのパスを相対パスに書き直す
