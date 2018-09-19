@@ -1,6 +1,267 @@
 @import 'boy';
 @import 'girl';
 
+html {
+  // BASE: 10px
+  // font-size: 62.5%;
+}
 body {
-  color: red;
+  // color: #fff;
+}
+a:link {
+  color : #fff;
+}
+a:visited {
+  color : #fff;
+}
+
+// common
+section {
+  // height: 5px;
+}
+.title {
+  font-size: 1.5rem;
+}
+.copy {
+  font-size: 2.5rem;
+}
+
+// font-color
+.white {
+  color: #fff;
+}
+.black {
+  color: #000;
+}
+.green {
+  color: #00b900;
+}
+.gold {
+  color: #937e54;
+}
+.orange {
+  color: #dc9962;
+}
+
+// background-color
+.bg-white {
+  background-color: #fff;
+}
+.bg-black {
+  background-color: #000;
+}
+.bg-brown {
+  background-color: #26140c;
+}
+.bg-gold {
+  background-color: #937e54;
+}
+.bg-green {
+  background-color: #00b900;
+}
+.bg-pink {
+  background-color: #ff4b68;
+}
+
+// font-size
+.sm-middle {
+  font-size: 1.2rem;
+}
+.middle {
+  font-size: 1.5rem;
+}
+.big {
+  font-size: 2.5rem;
+}
+
+.header {
+  color: #fff;
+
+  &__link {}
+  &__head {
+    margin: 0 auto;
+
+    &__copy {
+      width: 400px;
+
+      &__copy {
+        display: inline-block;
+        font-size: 1.6rem;
+        border: 2px solid #937e54;
+      }
+
+      &__title {
+        // TODO: responsive
+        font-size: 4rem;
+      }
+
+      &__line {
+        color: #00b900;
+        font-size: 1.5rem;
+      }
+
+      &__btn {
+        border-radius: 40px;
+        background-color: #00b900;
+        font-size: 1.6rem;
+      }
+
+      &__tips {
+        margin: 0 auto;
+        max-width: 312px;
+        color: #00b900;
+        border: 2px solid #00b900;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+    }
+    &__phone {
+      width: 300px;
+      background-color: red;
+    }
+  }
+}
+
+.footer {
+}
+
+// section
+.concept {
+  &__copy {
+    color: #937e54;
+  }
+}
+
+.questionnaie {
+  color: #fff;
+
+  &__content {
+    margin: 0 auto;
+
+    &__img {}
+    &__desc {}
+  }
+}
+
+.try {
+  &__content {
+    max-width: 660px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0px 10px 10px 4px rgba(0,0,0,0.2);
+  }
+
+  &__text {
+    color: #00b900;
+  }
+
+  &__tips {
+    margin: 0 auto;
+    max-width: 312px;
+    color: #00b900;
+    border: 2px solid #00b900;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  &__btn {
+    border-radius: 40px;
+    background-color: #00b900;
+    color: #fff;
+  }
+}
+
+.merit {
+  &__card {
+    box-shadow: 0px 10px 30px 4px #d6d6d6;
+  }
+}
+
+.strength {
+  color: #fff;
+
+  &__content {
+    margin: 0 auto;
+
+    &__img {}
+    &__desc {
+      .desc-box {
+        border: 1px solid #937e54;
+      }
+    }
+  }
+}
+
+.gift {
+  color: #fff;
+}
+
+.flow {
+  background-color: #fff;
+
+  &__card {
+    // TODO: 画像表示させる場合はmin-heightを大きめにとる
+    min-height: 150px;
+    box-shadow: 0px 10px 30px 4px #d6d6d6;
+  }
+}
+
+.message {
+  color: #fff;
+}
+
+.voice {
+  &__content {}
+
+  &__img {
+    width: 300px;
+    height: 300px;
+  }
+
+  &__comment {
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 4px #d6d6d6;
+    border-radius: 16px;
+    position: relative;
+    margin-left: 80px;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      left: -78px;
+      border: 30px solid transparent;
+      border-right: 80px solid #fff;
+      transform: rotate(25deg);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__head {
+      &__copy {
+        &__title {
+          margin: 1rem;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .voice {
+    &__comment {
+      margin: 1.5rem;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
 }

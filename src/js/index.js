@@ -9,10 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import './../scss/style.scss';
 
-console.log('main page')
-
-$(function() {
-  $('.hoge').click(function() {
-    console.log('hello jquery')
-  })
-})
+// $(function() {
+//   $('.hoge').click(function() {
+//     console.log('hello jquery')
+//   })
+// })
