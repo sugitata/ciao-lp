@@ -42,6 +42,9 @@ section {
 .orange {
   color: #dc9962;
 }
+.pink {
+  color: #ff4b68;
+}
 
 // background-color
 .bg-white {
@@ -88,6 +91,10 @@ section {
         display: inline-block;
         font-size: 1.6rem;
         border: 2px solid #937e54;
+      }
+
+      .girl-copy {
+        border: 2px solid #ff4b68;
       }
 
       &__title {
@@ -198,11 +205,9 @@ section {
 }
 
 .flow {
-  background-color: #fff;
-
   &__card {
     // TODO: 画像表示させる場合はmin-heightを大きめにとる
-    min-height: 150px;
+    min-height: 220px;
     box-shadow: 0px 10px 30px 4px #d6d6d6;
   }
 }

@@ -104,6 +104,5 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"js/girls.js":[function(require,module,exports) {
-console.log('page for girls');
+
 },{}]},{},["js/girls.js"], null)
-//# sourceMappingURL=/girls.97dba333.map

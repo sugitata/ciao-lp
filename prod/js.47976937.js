@@ -11237,16 +11237,13 @@ require('./../scss/style.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// $(function() {
+//   $('.hoge').click(function() {
+//     console.log('hello jquery')
+//   })
+// })
 exports.default = window.$ = window.jQuery = _jquery2.default;
 // TODO: `$ is not defined` でエラーになる
 // import 'bootstrap/dist/js/bootstrap.min';
-
-console.log('main page');
-
-$(function () {
-  $('.hoge').click(function () {
-    console.log('hello jquery');
-  });
-});
 },{"jquery":"../node_modules/jquery/dist/jquery.js","popper.js/dist/popper-utils.min.js":"../node_modules/popper.js/dist/popper-utils.min.js","popper.js/dist/popper.min.js":"../node_modules/popper.js/dist/popper.min.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./../scss/style.scss":"../node_modules/bootstrap/dist/css/bootstrap.css"}]},{},["js/index.js"], null)
 //# sourceMappingURL=/js.47976937.map
